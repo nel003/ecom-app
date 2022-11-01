@@ -27,7 +27,7 @@ function Header() {
     }
 
     return(
-       <div className={`w-screen flex fixed z-[1000] ${scrollPosition >= 140 ? "bg-primary":"bg-transparent"}`}>
+       <div className={`w-screen flex fixed z-[1000] overflow-hidden ${scrollPosition >= 140 ? "bg-primary":"bg-transparent"}`}>
         <div className="flex w-full items-center flex-col">
             <div className="h-[70px] flex max-w-[1300px] w-full">
                 {/* Left */}
@@ -50,7 +50,7 @@ function Header() {
                     <div className={`p-1 border-[2px] w-20 text-[12px] rounded-full text-center font-semibold hidden sm:block duration-500 ${scrollPosition >= 140 ? "text-accent border-accent hover:bg-accent hover:text-secondary":"text-secondary border-secondary hover:bg-secondary hover:text-accent"}`}>
                         Sign Up
                     </div>
-                    <div className={`p-1 border-[2px] w-20 text-[12px] rounded-full text-center font-semibold hidden sm:block duration-500 ${scrollPosition >= 140 ? "bg-accent text-primary hover:bg-transparent hover:text-accent":"text-accent bg-secondary border-transparent hover:bg-transparent hover:text-secondary hover:border-secondary"}`}>
+                    <div className={`p-1 border-[2px] w-20 text-[12px] rounded-full text-center font-semibold hidden sm:block duration-500 ${scrollPosition >= 140 ? "bg-accent text-primary border-accent hover:bg-transparent hover:text-accent":"text-accent bg-secondary border-transparent hover:bg-transparent hover:text-secondary hover:border-secondary"}`}>
                         Sign In
                     </div>
                     {/* mobile nav */}
@@ -74,7 +74,7 @@ function Header() {
                         <div className={`p-2 border-[2px] w-[100%] text-[12px] rounded-full text-center font-semibold duration-500 ${scrollPosition >= 140 ? "border-accent text-accent hover:bg-accent hover:text-primary":"border-secondary text-secondary hover:bg-secondary hover:text-accent"}`}>
                             Sign Up
                         </div>
-                        <div className={`p-2 border-[2px] w-[100%] text-[12px] rounded-full text-center font-semibold text-primary duration-500 ${scrollPosition >= 140 ? "border-accent text-secondary bg-accent hover:bg-transparent hover:text-accent":"bg-secondary text-accent border-transparent hover:bg-transparent hover:text-secondary hover:border-secondary"}`}>
+                        <div className={`p-2 border-[2px] w-[100%] text-[12px] rounded-full text-center font-semibold duration-500 ${scrollPosition >= 140 ? "border-accent text-secondary bg-accent hover:bg-transparent hover:text-accent":"bg-secondary text-accent border-transparent hover:bg-transparent hover:text-secondary hover:border-secondary"}`}>
                             Sign In
                         </div>
                     </div>
