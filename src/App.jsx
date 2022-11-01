@@ -12,6 +12,7 @@ function App() {
     <BrowserRouter>
     <Routes>
      <Route path='/' element={<Home/>}/>
+     <Route path='/ecom-app' element={<Home/>}/>
     </Routes>
   </BrowserRouter>
   )
