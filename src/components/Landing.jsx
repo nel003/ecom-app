@@ -23,7 +23,7 @@ function Landing() {
                 <h1 className="text-3xl sm:text-4xl font-semibold">
                   Shop 'till you drop!
                 </h1>
-                <p className="min-w-[250px] w-full sm:w-[35vw]">
+                <p className="min-w-[250px] w-full md:w-[35vw]">
                   Optio ad explicabo ea consequuntur dolorum vero, itaque minima
                   ipsam aliquam quo, fugiat, totam dicta distinctio labore!
                   Animi, quo?
