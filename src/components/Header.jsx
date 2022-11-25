@@ -27,7 +27,7 @@ function Header() {
     }
 
     return(
-       <div className={`w-screen flex fixed z-[1000] overflow-hidden ${scrollPosition >= 140 ? "bg-primary":"bg-transparent"}`}>
+       <div className={`w-screen flex fixed z-[1000] shadow-md overflow-hidden ${scrollPosition >= 140 ? "bg-primary":"bg-[rgba(0,0,0,0.4)]"}`}>
         <div className="flex w-full items-center flex-col">
             <div className="h-[70px] flex max-w-[1300px] w-full">
                 {/* Left */}
