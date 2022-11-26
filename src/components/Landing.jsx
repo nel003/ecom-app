@@ -39,7 +39,7 @@ function Landing() {
                 </div>
               </div>
               <div className="w-[50%] hidden md:flex h-full justify-center">
-                <img className="mix-blend-screen" src={Side}></img>
+                <img src={Side}></img>
               </div>
             </div>
           </div>
