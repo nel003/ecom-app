@@ -1,4 +1,5 @@
 import React, { useState, useEffect }  from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import {FiSearch} from "react-icons/fi";
 import {MdOutlineShoppingCart} from "react-icons/md";
@@ -6,6 +7,7 @@ import {MdOutlineShoppingCart} from "react-icons/md";
 function Header() {
     const [navIsClicked, setNavIsClicked] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
+    const navigate = useNavigate();
 
     const handleScroll = () => {
         const position = window.pageYOffset;
@@ -33,7 +35,7 @@ function Header() {
                 {/* Left */}
                 <div className="flex h-full items-center ml-4 sm:ml-8">
                     <div className="w-[40px] h-[40px] mr-2">
-                        <img src={Logo} alt="nell" />
+                        <img className="duration-300 hover:scale-110" src={Logo} alt="nell" />
                     </div>
                     <h1 className={`font-bold text-lg tracking-[2px] ${scrollPosition >= 140 ? "text-accent":"text-secondary"}`}>NELL</h1>
                 </div>
@@ -47,7 +49,7 @@ function Header() {
                 {/* Right */}
                 <div className="flex gap-2 items-center mr-4 sm:mr-8">
                     <MdOutlineShoppingCart className={`${scrollPosition >= 140 ? "text-accent":"text-secondary"}`} size={28}/>
-                    <div className={`p-1 border-[2px] w-20 text-[12px] rounded-full text-center font-semibold hidden sm:block duration-500 ${scrollPosition >= 140 ? "text-accent border-accent hover:bg-accent hover:text-secondary":"text-secondary border-secondary hover:bg-secondary hover:text-accent"}`}>
+                    <div onClick={() => navigate("./register")} className={`p-1 border-[2px] w-20 text-[12px] rounded-full text-center font-semibold hidden sm:block duration-500 ${scrollPosition >= 140 ? "text-accent border-accent hover:bg-accent hover:text-secondary":"text-secondary border-secondary hover:bg-secondary hover:text-accent"}`}>
                         Sign Up
                     </div>
                     <div className={`p-1 border-[2px] w-20 text-[12px] rounded-full text-center font-semibold hidden sm:block duration-500 ${scrollPosition >= 140 ? "bg-accent text-primary border-accent hover:bg-transparent hover:text-accent":"text-accent bg-secondary border-transparent hover:bg-transparent hover:text-secondary hover:border-secondary"}`}>

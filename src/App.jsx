@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './pages/Home';
+import Signup from './pages/Signup';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     <BrowserRouter>
     <Routes>
      <Route path='/' element={<Home/>}/>
-     <Route path='/ecom-app' element={<Home/>}/>
+     <Route path='/register' element={<Signup/>}/>
     </Routes>
   </BrowserRouter>
   )
